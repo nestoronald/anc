@@ -1,0 +1,156 @@
+/* Author Name: arrowthemes http://themeforest.net/user/arrowthemes  Version: 1.0 */
+
+@import url(../warp/css/mobile.css);
+
+/* Resets
+----------------------------------------------------------------------------------------------------*/
+:focus {outline:none;}
+a { text-decoration: none; line-height: inherit; }
+a:focus { outline: none; }
+blockquote {quotes: none}
+blockquote:before, blockquote:after{content: '';content: none}
+abbr, .postcontent dfn{border-bottom: 1px dotted;} 
+.right{float: right;}
+.left{float: left;}
+ul { list-style: none outside; }
+ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 0px; }
+li { line-height: 18px; margin-bottom: 0px}
+
+
+/* mobile logo
+----------------------------------------------------------------------------------------------------*/
+.m-toolbar h1 {
+  color:#2B2E31;
+  font-size:25px;
+  font-weight:normal;
+  text-shadow:#7C838A 0 1px 1px;
+}
+
+
+/* fonts
+----------------------------------------------------------------------------------------------------*/
+#system h1.title{padding-top: 20px;}
+.showhide li h4 {font-size: 14px !important;}
+h3 {
+  font-size:16px;
+  line-height:16px;
+}
+
+/*modules
+----------------------------------------------------------------------------------------------------*/
+#m-top .module, .noblog #m-content, #page.isblog #system .item, #m-bottom .module {
+background: #F2F2F2;
+border: 1px solid white;
+text-shadow: 0 1px 0 white;
+}
+
+#system h3.title, #system .contact-head h3 {
+  padding-left:0;
+}
+
+.mod-dark, .mod-dark h3 {
+    color: #202020 !important;
+}
+
+/*images/multimedia/video/audio
+----------------------------------------------------------------------------------------------------*/
+
+.spotlight img{max-width: 96%; height: auto;}
+.mejs-container.mejs-audio, .mejs-container.mejs-video, video, .mejs-layers, .mejs-layer{max-width: 98%; }
+.mejs-container.mejs-video, video, .mejs-layers, .mejs-layer{height: 220px !important;}  /*set your video height*/
+.mejs-container{
+	border: 3px solid rgba(0, 0, 0, 0.4); 
+	box-shadow: 1px 1px 0 rgba(255,255,255, 0.3);
+    border-radius: 4px;
+}
+ul.slides, .wk-slideshow-default > div, .wk-slideshow .wk-content > a:first-child, .wk-slideshow .wk-content > img:first-child, .wk-slideshow .wk-content > a:first-child > img, .wk-content img{
+	border-radius: 5px; max-width: 100%; height: 200px; max-height: 100% ;  /*set your image slider height*/
+}
+
+#lightbox-title-float, .wk-slideshow .caption, .wk-slideshow .caption a{border-radius: 0 0 4px 4px;}
+
+
+.overlay div{font-size: 11px;}
+.pic3d{
+border: 0 solid #FFF !important;
+-o-box-shadow: inset 0 1px 2px #FFFFFF,0 0 3px #BABABA;
+-webkit-box-shadow: inset 0 1px 2px #FFFFFF,0 0 3px #BABABA;
+-moz-box-shadow: inset 0 1px 2px #FFFFFF,0 0 3px #BABABA;
+-ms-box-shadow: inset 0 1px 2px #FFFFFF,0 0 3px #BABABA;
+box-shadow: inset 0 1px 2px #FFFFFF,0 0 3px #BABABA;}
+
+/*mobile buttons*/
+
+.button,
+	.button-more, 
+	.button-color, 
+	.button-action, 
+	button, 
+	input[type="submit"], 
+	input[type="reset"], 
+	input[type="button"],
+	.button-color, 
+	button.button-color, 
+	input[type="submit"].button-color,
+	input[type="reset"].button-color, 
+	input[type="button"].button-color, 
+	#system .pagination a, 
+	#system .pagination strong{
+	
+		padding: 3px 8px; 
+		font-size: 11px;
+		color: #444444 !important; 
+		border-color: #c0c0c0 #888888 #888888 #c0c0c0; 
+		text-shadow: 0 1px rgba(255, 255, 255, .4);
+	 	background-image: url(../images/typo/buttons.png); 
+	 	background-repeat: repeat-x; 
+	 	background-color: #efefef
+		 }
+
+
+/*reveal-modal
+----------------------------------------------------------------------------------------------------*/
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%; 
+	width: 100%; 
+	background: #000; 
+	z-index: 40; 
+	display: none; 
+	top: 0; 
+	left: 0; }
+
+.reveal-modal {
+	visibility: hidden; 
+	top: 100px; 
+	left: 0; 
+	margin: 10px; 
+	width: auto; 
+	background: #eee url(../images/typo/modal-gloss.png) no-repeat -200px -80px; 
+	position: absolute; 
+	z-index: 41; 
+	padding: 30px 40px 34px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4); 
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	box-shadow: 0 0 10px rgba(0,0,0,.4);}
+
+.reveal-modal .close-reveal-modal {font-size: 22px;	line-height: .5; position: absolute;top: 8px; 	right: 11px; color: #aaa; text-shadow: 0 -1px 1px rbga(0,0,0,.6);	font-weight: bold;} 
+.reveal-modal .row {min-width: 0;}
+
+
+.reveal-modal input[type="text"],
+.reveal-modal input[type="password"],
+.reveal-modal input[type="email"],
+.reveal-modal select{	
+	width: 100%;
+	-webkit-transition: background-color .15s ease-in-out;
+	-moz-transition: background-color .15s ease-in-out;
+	-ms-transition: background-color .15s ease-in-out;
+	-o-transition: background-color .15s ease-in-out;
+	transition: background-color .15s ease-in-out;
+}

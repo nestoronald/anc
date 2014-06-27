@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="css/config.css">
+	<script type="text/javascript" src="../libraries/jquery/jquery.js" ></script>
+	<script type="text/javascript" src="js/config.js" ></script>
+	
+</head>
+<body>
+<input class="color-pick"  type="text" size="10" value="892223">
+
+<script>
+		jQuery('input.color-pick').ColorPicker({
+			onSubmit: function(hsb, hex, rgb, el) {
+				jQuery(el).val(hex);
+				jQuery(el).ColorPickerHide();
+			},
+			onBeforeShow: function () {
+				jQuery(this).ColorPickerSetColor(this.value);
+			}
+		});
+	</script>
+</body>
+</html>

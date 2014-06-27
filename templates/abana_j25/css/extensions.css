@@ -1,0 +1,285 @@
+/* Author Name: arrowthemes http://themeforest.net/user/arrowthemes  Version: 1.0 */
+
+
+/* Resets
+----------------------------------------------------------------------------------------------------*/
+	:focus {outline:none;}
+	a { text-decoration: none; line-height: inherit; }
+	a:focus { outline: none; }
+	blockquote {quotes: none}
+	blockquote:before, blockquote:after{content: '';content: none}
+	abbr, .postcontent dfn{border-bottom: 1px dotted;} 
+	.right{float: right;}
+	.left{float: left;}
+
+
+/*cursors
+----------------------------------------------------------------------------------------------------*/
+
+	body, .current, abbr{cursor: url(../images/cursor/cursor.cur),default;}
+	a, button, input[type="submit"], input[type="reset"], input[type="button"], a span, .button, .button-color, .error, .accordion h2, li .title, .tag-body, div.detail, ul.menu li, ul.menu, form label, .zoom, .more, .showhide h4, #slide-nav li, .slider-nav .left, .slider-nav .right, .orbit-bullets li, form label, .orbit-wrapper .timer, .mejs-controls .mejs-time-rail span, .mejs-controls .mejs-time-rail span, .mejs-overlay-play, .wk-slideshow-default .nav span, .wk-slideshow-default > div:hover .next, .wk-slideshow-default > div:hover .prev, .wk-slideshow .next, .wk-slideshow .prev, .wk-slideshow .nav li, ul.gkTabs li, #lightbox-overlay, .nspPagination li{cursor: url(../images/cursor/hand.cur),pointer !important;}
+	input {cursor: url(../images/cursor/text.cur),text;}
+	abbr, acronym, .postcontent dfn, abbr[title], .postcontent dfn[title]{cursor: url(../images/cursor/help.cur),help;}
+
+
+/*forms
+----------------------------------------------------------------------------------------------------*/
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	textarea,
+	select {
+		border: 1px solid #FFFFFF;
+		padding:4px 13px 3px;   
+		-webkit-border-radius:4px;  
+		-moz-border-radius:4px;  
+		-ms-border-radius:4px;  
+		-o-border-radius:4px;  
+		border-radius:4px;  
+		background-color:#F6F6F6;
+		outline: none;
+		color:#939393;
+		margin:1px 0 3px;
+		-webkit-box-shadow:inset 0 0 3px #C0C0C0;
+		-moz-box-shadow:inset 0 0 3px #C0C0C0;
+		-ms-box-shadow:inset 0 0 3px #C0C0C0;
+		-o-box-shadow:inset 0 0 3px #C0C0C0;
+		box-shadow:inset 0 0 3px #C0C0C0;
+		line-height: 1.5em;
+		min-height:21px;
+	}
+
+	select {padding: 5px; border: 1px solid #c0c0c0;}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		outline:none;
+		background: #FFF;
+		-webkit-box-shadow:inset 0 0 1px #C0C0C0; 
+		-moz-box-shadow:inset 0 0 1px #C0C0C0; 
+		-ms-box-shadow:inset 0 0 1px #C0C0C0;
+		-o-box-shadow:inset 0 0 1px #C0C0C0; 
+		box-shadow:inset 0 0 1px #C0C0C0;
+	}
+
+	/*Acymailing component*/
+	.acyfield_email input[type="text"]{
+		min-height: 20px !important; 
+		float: right; 
+		min-height: 17px; 
+		margin: 3px 5px 3px 0;
+		-moz-box-shadow:inset 0 0 5px #000,1px 1px 1px #404040;
+		-ms-box-shadow:inset 0 0 5px #000,1px 1px 1px #404040;
+		-o-box-shadow:inset 0 0 5px #000,1px 1px 1px #404040;
+		-webkit-box-shadow:inset 0 0 12px #000,1px 1px 1px #404040;
+		box-shadow:inset 0 0 5px #000,1px 1px 1px #4B4B4B;
+		min-height:24px;  
+		line-height: 1.5em;  
+		margin:-3px 0 3px;  
+		border: 1px solid #000;  
+		padding:4px 13px 3px 30px;   
+		-moz-border-radius:4px;  
+		-ms-border-radius:4px;  
+		-webkit-border-radius:4px;  
+		-o-border-radius:4px;  
+		border-radius:4px;  
+		color:#c0c0c0; 
+		background: url(../images/widget/social.png) 4px 7px no-repeat #202020}
+    
+    .acyfield_email input:hover{background-color: #303030}
+    .acyfield_email input:focus{background-color: #404040; background-position: -20px 7px}
+
+
+
+	/*image smart-loading*/
+	a.h-effect img{visibility: hidden;}
+	img.pic3d{visibility: hidden;}
+	.pos-media img.pic3d{visibility: visible;}
+
+	.preloader{width: auto; height: auto; background: url(../images/preloader.gif) 50% 50% no-repeat scroll #FFF; }
+	div.img_caption{text-align: center;}
+	.align-left div.img_caption {margin-right: 13px;}
+
+
+
+/*columns
+----------------------------------------------------------------------------------------------------*/
+
+	.container { padding: 0 10px; }
+	.row { width: 100%; min-width: 0; margin: 0 auto; }  	/* change max-width to define your window size */
+	.row .row { min-width: 0; }
+	
+	.row .column, .row .columns { margin-left: 2.4%; float: left; min-height: 1px;  }
+	.row .column:first-child, .row .columns:first-child { margin-left: 0; }
+	[class*="column"] + [class*="column"]:last-child { float: right; }
+	
+	.row .one, .row .one-twelfth 	{ width: 6.3%; }
+	.row .two, .row .one-sixth 		{ width: 14.6%; }
+	.row .one-fifth 				{ width: 18.00% }
+	.row .three, .row .one-fourth 	{ width: 23.00%; }
+	.row .four, .row .one-third		{ width: 31.67%; }
+	.row .five						{ width: 40.1%; }
+	.row .six, .row .one-half,
+	.row .two-fourths				{ width: 48.7%; }
+	.row .seven 					{ width: 57.5%; }
+	.row .eight, .row .two-thirds 	{ width: 65.7%; }
+	.row .nine, .row .three-fourths { width: 74.4%; }
+	.row .ten 						{ width: 83.0%; }
+	.row .eleven 					{ width: 91.3%; }
+	.row .twelve 					{ width: 100%; }
+
+	/* Nicolas Gallagher's micro clearfix */
+	 .row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
+	 .row:after, .clearfix:after { clear: both; }
+	 .row, .clearfix { zoom: 1; }
+	 .clear {clear: both;  display: block;  overflow: hidden;  visibility: hidden;  width: 0;  height: 0;}
+
+
+	 /* shadow effect */
+	.block-shadow{display: block; height: 16px; left: 8px;	margin: 14px 0 -16px -10px; position: relative; max-width: 100%; }
+	.grid-box .block-shadow{margin: 12px 19px -16px 1px; position: relative; max-width: 100%; bottom: 15px;}
+	.column .block-shadow{margin: 14px 0 -16px -10px; position: relative; max-width: 100%; bottom: 21px;}
+
+	.folio .block-shadow{bottom: 17px;}
+	.block-shadow:before, .block-shadow:after{content: ' '; position: absolute; width: 50%; height: 100px; z-index: -10; }
+
+	.block-shadow:before {top: -107px; left: -7px;	 	
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+		-o-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+		-webkit-box-shadow: 7px 6px 6px #333;
+		-moz-box-shadow: 7px 6px 6px #333;
+		-ms-box-shadow: 7px 6px 6px #333;
+		-o-box-shadow: 7px 6px 6px #333;
+		box-shadow: 7px 6px 6px #333;}
+
+	.block-shadow:after {top: -107px; right: -9px;	
+		-webkit-transform: rotate(5deg);
+		-moz-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+		-o-transform: rotate(5deg);
+		transform: rotate(5deg);
+		-webkit-box-shadow: -7px 6px 6px #333;
+		-moz-box-shadow: -7px 6px 6px #333;
+		-ms-box-shadow: -7px 6px 6px #333;
+		-o-box-shadow: -7px 6px 6px #333;
+		box-shadow: -7px 6px 6px #333;}
+
+		.hidden-text {
+			width: 70%;
+			margin: 12px 0;
+		}
+
+
+/*reveal-modal
+----------------------------------------------------------------------------------------------------*/
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%; 
+		width: 100%; 
+		background: #000; 
+		z-index: 40; 
+		display: none; 
+		top: 0; 
+		left: 0; }
+
+	.reveal-modal {
+		visibility: hidden; 
+		top: 100px; 
+		left: 50%; 
+		margin-left: -300px; 
+		width: 520px; 
+		background: #eee url(../images/typo/modal-gloss.png) no-repeat -200px -80px; 
+		position: absolute; 
+		z-index: 41; 
+		padding: 30px 40px 34px; 
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4); 
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		box-shadow: 0 0 10px rgba(0,0,0,.4);}
+
+		.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+		.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+		.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+		.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+
+		.reveal-modal .close-reveal-modal {font-size: 22px;	line-height: .5; position: absolute;top: 8px; 	right: 11px; color: #aaa; text-shadow: 0 -1px 1px rbga(0,0,0,.6);	font-weight: bold;} 
+		.reveal-modal .row {min-width: 0;}
+
+
+		.reveal-modal input[type="text"],
+		.reveal-modal input[type="password"],
+		.reveal-modal input[type="email"],
+		.reveal-modal select{	
+			width: 90%;
+			-webkit-transition: background-color .15s ease-in-out;
+			-moz-transition: background-color .15s ease-in-out;
+			-ms-transition: background-color .15s ease-in-out;
+			-o-transition: background-color .15s ease-in-out;
+			transition: background-color .15s ease-in-out;
+		}
+
+	/*clients*/
+	.client {
+		position: relative;
+		float: left;
+	}
+
+	.client img {
+		padding-left: 15px;
+	}
+
+
+
+/* widgets/modules
+----------------------------------------------------------------------------------------------------*/
+	
+	/*audio/video*/
+	.mejs-container{
+		border: 3px solid rgba(0, 0, 0, 0.4); 
+		-webkit-box-shadow: 1px 1px 0 rgba(255,255,255, 0.3);  
+		-moz-box-shadow: 1px 1px 0 rgba(255,255,255, 0.3);  
+		box-shadow: 1px 1px 0 rgba(255,255,255, 0.3);
+		-webkit-border-radius: 4px;
+		   -moz-border-radius: 4px;
+		    -ms-border-radius: 4px;
+		     -o-border-radius: 4px;
+		        border-radius: 4px;
+	}
+	.mejs-controls .mejs-time-rail .mejs-time-loaded{filter: none;}
+
+
+	/*accordion menu*/
+	.menu-sidebar li.level1, .wk-twitter-list article, .zoo-comments-list > article { background: url(../images/body/hr-dotted.png) repeat-x scroll 0 100% transparent; border: 0 none !important; }
+	
+	/*twitter*/
+	.wk-twitter-list article{padding-bottom: 8px !important;}
+	.wk-twitter-list .meta{font-style: normal;}
+
+	/*zoo*/
+	.zoo-comments-list > article {padding-bottom: 10px !important;}
+
+	/*gavick mod news image*/
+	.nspBotInterface, .nspTopInterface{
+		margin: 23px 0;
+		margin-top: -37px;
+	}
+
+	.nspArts, .nspMain {
+		overflow: visible;
+	}
+
+	.nspArt .author{
+		font-style: normal;
+		float: right;
+		padding: 15px 0;
+		font-weight: bold;
+	}

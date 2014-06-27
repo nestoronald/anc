@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.5" client="site" method="upgrade">
+	<name>Sequence_js</name>
+	<author>arrowthemes</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Copyright (C) 2012 Arrowthemes. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@arrowthemes.com</authorEmail>
+	<authorUrl>www.arrowthemes.com</authorUrl>
+	<version>0.4</version>
+	<description>Sequence Joomla Slider by arrowthemes - based on Sequence js by Ian Lunn</description>
+	<files>
+		<filename module="mod_sequencejs">mod_sequencejs.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>scripts/</folder>
+		<folder>images/</folder>
+		<folder>styles/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="slides_set" label="Slide Settings">
+				<field 	  
+					name="autoPlay" 
+					type="radio" 
+					default="true" 
+					label="Auto play slider" 
+					description="Auto play the slider">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field
+					name="autoPlayDelay"
+					type="text"
+					default="5000"
+					label="Slide pause time"
+					description="Set the time in milliseconds that each slide will show. Auto play slider must be set to 'Yes'" />
+
+				<field 	  
+					name="pauseOnHover" 
+					type="radio" 
+					default="true" 
+					label="Pause on hover" 
+					description="Pause the slider when you mouse hover">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="preloader" 
+					type="radio" 
+					default="true" 
+					label="show preloader" 
+					description="Show preloader until slider content has successfully loaded">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field
+					name="sl_height"
+					type="text"
+					default="500"
+					label="Slider height"
+					description="Slider height in px. Max - 500px" />
+
+				<field
+					name="startingFrameID"
+					type="text"
+					default="1"
+					label="Starting Frame ID"
+					description="Set the starting Frame number" />
+				
+				<field 	  
+					name="animateStartingFrameIn" 
+					type="radio" 
+					default="true" 
+					label="Animate Starting Frame" 
+					description="animate the starting frame">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="prependNextButton" 
+					type="radio" 
+					default="false" 
+					label="Show next button" 
+					description="show the next navigation button">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="prependPrevButton" 
+					type="radio" 
+					default="false" 
+					label="Show previous button" 
+					description="show the previous navigation button">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="touchEnabled" 
+					type="radio" 
+					default="false" 
+					label="Touch Enabled" 
+					description="Enable swipe events on touch devices">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="keysNavigate" 
+					type="radio" 
+					default="true" 
+					label="Keyboard navigation" 
+					description="Enable directional keyboard navigation">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+
+				<field 	  
+					name="cycle" 
+					type="radio" 
+					default="true" 
+					label="Repeat slides on end" 
+					description="Repeat the slides when the last slide is reached">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="slides" label="Slides Content (1-10)">
+			<field type="spacer" />
+			<field type="spacer" label="Slide 1" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_1" 
+					type="radio" 
+					default="true" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_1"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_1"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_1"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_1"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_1" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_1"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+			
+			
+			<field type="spacer" />
+			<field type="spacer" label="Slide 2" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_2" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_2"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_2"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_2"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_2"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_2" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_2"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 3" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_3" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_3"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_3"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_3"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_3"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_3" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_3"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 4" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_4" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_4"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_4"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_4"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_4"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_4" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_4"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 5" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_5" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_5"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_5"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_5"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_5"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_5" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_5"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 6" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_6" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_6"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_6"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_6"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_6"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_6" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_6"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 7" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_7" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_7"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_7"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_7"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_7"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_7" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_7"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 8" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_8" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_8"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_8"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_8"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_8"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_8" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_8"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 9" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_9" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_9"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_9"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_9"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_9"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_9" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_9"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+
+			<field type="spacer" />
+			<field type="spacer" label="Slide 10" />
+			<field type="spacer" hr="true" />
+			<field 	  
+					name="show_slide_10" 
+					type="radio" 
+					default="false" 
+					label="Show Slide" 
+					description="Show this slide">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+			<field
+					name="title_10"
+					type="text"
+					label="Slide Title"
+					description="Enter the title of the slide" />
+			<field
+					name="sub_title_10"
+					type="textarea"
+					cols="55"
+					rows="7"
+					label="Slide Content"
+					description="Enter the content of slide" />
+			<field
+					name="button_text_10"
+					type="text"
+					label="Button Text"
+					description="Enter the button text" />
+			<field
+					name="button_url_10"
+					type="text"
+					label="Button URL"
+					description="Enter the button link" />
+			<field 	  
+					name="button_style_10" 
+					type="radio" 
+					default="true" 
+					label="Button Style" 
+					description="Choose the type of button style">
+					<option value="true">Normal</option>
+					<option value="false">Colored</option>
+				</field>
+			<field
+					name="image_url_10"
+					type="media"
+					label="Image Path"
+					description="Select the Image" />
+			<field type="spacer" label="" />
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="General">
+		<field name="profile_default" type="profile" default="" label="Default Profile" description="Select the profile which should be loaded by default." />
+		<field name="profile_dynamic" type="radio" default="1" label="Dynamic Profiles" description="Allow profiles to be loaded by URL.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="compression" type="list" default="0" label="Compression" description="Minify and combine CSS and JavaScript into a single file. Use gzip compression and Data URIs to reduce image file requests.">
+			<option value="0">None</option>
+			<option value="1">Combination + Minify</option>
+			<option value="2">Combination + Minify + Data URIs</option>
+			<option value="3">Combination + Minify + Data URIs + Gzip</option>
+		</field>
+		<field name="ie6page" type="radio" default="1" label="IE6 Upgrade Page" description="Redirect Internet Explorer 6 to the upgrade page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+	  	<field name="tracking_code" type="textarea" rows="8" cols="30" label="Tracking Code" description="Insert your Google Analytics tracking code." />
+		<!-- <field name="verify" type="verify" label="Verify Files" description="Detect and show all file modifications." /> -->
+		<field name="check" type="check" label="System Check" description="Detects system issues." />
+	</fields>
+	<fields name="Profiles">
+		<field name="Style" type="separator" />
+		<field name="style" type="styles" default="" label="CSS Style" description="Select the style variation." />
+		<field name="bg_texture" type="list" default="bg_texture_1" label="Background Texture" description="Select the background texture.">
+			<option value="bg_texture_1">vertical lines</option>
+			<option value="bg_texture_2">Paper texture</option>
+			<option value="bg_texture_3">Grunge wall</option>
+			<option value="bg_texture_4">Small boxes</option>
+			<option value="bg_texture_5">Diagonal lines</option>
+			<option value="bg_texture_6">Horizontal lines</option>
+			<option value="bg_texture_7">Leather</option>
+			<option value="bg_texture_8">Linen texture</option>
+			<option value="bg_texture_9">Plywood</option>
+			<option value="bg_texture_10">Diagonal Grunge lines</option>
+			<option value="bg_texture_11">Sand Texture</option>
+			<option value="bg_texture_12">Dark Wooden Floor</option>
+		</field>
+		<field name="bg_tone" type="list" default="light" label="Background Tone" description="Select the background tone.">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</field>
+		<field name="Content Colors" type="separator" />
+		<field name="body_color" type="color" size="10" default="202020" label="Body font" description="set the body font color" />
+		<field name="link_color" type="color" size="10" default="800000" label="Normal link" description="set the normal link color" />
+		<field name="hover_color" type="color" size="10" default="FF8519" label="Hover link" description="set the hover link color" />
+		<field name="brd_link_color" type="color" size="10" default="" label="Breadcrumbs link" description="set the breadcrumbs link color" />
+		<field name="heading_color" type="color" size="10" default="202020" label="Headings" description="set the headings color" />
+		<field name="header_content_color" type="color" size="10" default="FFFFFF" label="Header content font" description="set the color for the header content font (showcase module position)" />
+		<field name="title_span_color" type="color" size="10" default="808080" label="Title span" description="set the color for the first word of module headings" />
+		<field name="text_highlight_color" type="color" size="10" default="" label="Text highlight" description="set the color for the text highlight" />
+		
+		<field name="Button Colors" type="separator" />
+		<field name="button_bg_color" type="color" size="10" default="" label="Button background" description="set the background color of the colored button" />
+		<field name="button_color" type="color" size="10" default="FFFFFF" label="Button font" description="set the font color of the colored button" />
+		<field name="button_border_color" type="color" size="6" default="" label="Button border" description="set the border color of the colored button" />
+		
+		<field name="Menu Colors" type="separator" />
+		<field name="menu_header_color" type="color" size="6" default="" label="Menu header" description="set the background color of the menu header" />
+		<field name="menu_bg_border_color" type="color" size="6" default="" label="Dropdown menu border" description="set the border color of the dropdown menu " />
+		<field name="menu_item_font_color" type="color" size="6" default="" label="Menu item font" description="set the font color of the dropdown menu item" />
+		<field name="menu_item_active_color" type="color" size="6" default="" label="Menu active item font" description="set the font color of the dropdown menu active or hover item" />
+		<field name="menu_dfn_font_color" type="color" size="6" default="" label="Menu definition font" description="set the font color of the dropdown menu definition" />
+		<field name="menu_item_bg_color" type="color" size="6" default="" label="Menu item background" description="set the background color of the dropdown menu item" />
+		<field name="menu_item_bg_hover_color" type="color" size="6" default="" label="Menu item hover background" description="set the background color of the  dropdown menu item when hovered over" />
+		<field name="menu_item_font_hover_color" type="color" size="6" default="" label="Menu item hover font" description="set the font color of the  dropdown menu item when hovered over" />
+		<field name="menu_item_bg_current_color" type="color" size="6" default="" label="Menu item current background" description="set the background color of the current dropdown menu item" />
+		<field name="menu_item_font_current_color" type="color" size="6" default="" label="Menu item current font" description="set the font color of the current dropdown menu item" />
+		<field name="menu_item_bg_sep_color" type="color" size="6" default="" label="Menu item parent background" description="set the background color of the parent dropdown menu item" />
+		<field name="menu_item_tb_color" type="color" size="6" default="" label="Menu item light border" description="set the light border color of the menu separator " />
+		<field name="menu_item_bb_color" type="color" size="6" default="" label="Menu item dark border" description="set the dark border color of the menu separator" />
+		
+		<field name="Widgets Colors" type="separator" />
+		<field name="media_track_color" type="color" size="6" default="" label="Media track color" description="set the background color of the media track for audio and video tracks" />
+		<field name="block_color" type="color" size="6" default="" label="Color-block background" description="set the background color of the color block module style" />
+		<field name="block_border_color" type="color" size="6" default="" label="Color-block border color" description="set the border color of the color block module style" />
+		<field name="block_font_color" type="color" size="6" default="FFFFFF" label="Color-block font color" description="set the font color of the color block module style" />
+		
+		<field name="Fonts" type="separator" />
+			<field name="font2" type="list" default="bebas" label="Header Font" description="Select the headings typeface.">
+			<option value="bebas">Bebas Neue</option>
+			<option value="economica">Economica</option>
+			<option value="droidsans">Droid Sans</option>
+			<option value="opensans">Open Sans</option>
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="trebuchet">Trebuchet</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value=""></option>
+			<option value="">------- web fonts -------</option>
+			<option value="gudea">Gudea</option>
+			<option value="istok">Istok Web</option>
+			<option value="marvel">Marvel</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="patuaone">Patua One</option>
+			<option value="play">Play</option>
+			<option value="ropasans">Ropa Sans</option>
+			<option value="signika">Signika Negative</option>
+			<option value="yanonekaffeesatz">Yanone Kaffeesatz</option>
+
+		</field>
+
+		<field name="font1" type="list" default="droidsans" label="Body Font" description="Select the main body typeface.">
+			<option value="droidsans">Droid Sans</option>
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="trebuchet">Trebuchet</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value=""></option>
+			<option value="">------- web fonts -------</option>
+			<option value="gudea">Gudea</option>
+			<option value="istok">Istok Web</option>
+			<option value="marvel">Marvel</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="ropasans">Ropa Sans</option>
+			<option value="signika">Signika Negative</option>
+
+		</field>
+	
+		<field name="font3" type="list" default="droidsans" label="Menu Font" description="Select the menu typeface.">
+			<option value="bebas">Bebas Neue</option>
+			<option value="economica">Economica</option>
+			<option value="droidsans">Droid Sans</option>
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value="trebuchet">Trebuchet</option>
+
+			<option value=""></option>
+			<option value="">------- web fonts -------</option>
+			<option value="gudea">Gudea</option>
+			<option value="istok">Istok Web</option>
+			<option value="marvel">Marvel</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="patuaone">Patua One</option>
+			<option value="play">Play</option>
+			<option value="ropasans">Ropa Sans</option>
+			<option value="signika">Signika Negative</option>
+			<option value="yanonekaffeesatz">Yanone Kaffeesatz</option>
+		</field>
+
+		<field name="Layout" type="separator" />
+		<field name="system_output" type="radio" default="1" label="System Output" description="Show the system output.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="template_width" type="text" size="10" default="998" label="Template Width" description="Set the template width in pixel." class="short" />
+		<field name="sidebar-a_width" type="text" size="10" default="300" label="Sidebar A Width" description="Set the Sidebar A width in pixel." class="short" />
+		<field name="sidebar-b_width" type="text" size="10" default="300" label="Sidebar B Width" description="Set the Sidebar B width in pixel." class="short" />
+		<field name="sidebar-a" type="list" default="left" label="Sidebar A Position" description="Align the sidebar to the left or right.">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</field>
+		<field name="sidebar-b" type="list" default="right" label="Sidebar B Position" description="Align the sidebar to the left or right.">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</field>
+		<field name="showcase" type="layout" default="equal" label="Showcase Layout" description="Select a grid layout for this module position." />
+		<field name="top-a" type="layout" default="equal" label="Top A Layout" description="Select a grid layout for this module position." />
+		<field name="top-b" type="layout" default="equal" label="Top B Layout" description="Select a grid layout for this module position." />
+		<field name="innertop" type="layout" default="equal" label="Inner Top Layout" description="Select a grid layout for this module position." />
+		<field name="innerbottom" type="layout" default="equal" label="Inner Bottom Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-a" type="layout" default="equal" label="Bottom A Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-b" type="layout" default="equal" label="Bottom B Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-c" type="layout" default="uneven" label="Bottom C Layout" description="Select a grid layout for this module position." />
+		<field name="menu_width" type="text" size="10" default="200" label="Drop Down Column Width" description="Set the column width of the drop down menu in pixel." class="short" />
+	</fields>
+
+	<fields name="System">
+		<field name="Header" type="separator" />
+		<field name="date" type="radio" default="1" label="Date" description="Show the date.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="show_logo_tag_line" type="radio" default="1" label="Logo tag line" description="Show the logo tag line.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="logo_tag_line_text" type="text" size="10" default="" label="Logo tag line text" description="set the tag line to appear next to the logo. Logo tag line must be set to 'Yes'" class="long" />
+		<field name="Footer" type="separator" />
+		<field name="totop_scroller" type="radio" default="1" label="Back-To-Top Scroller" description="Show the back-to-top scroller.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="show_footer_tag_line" type="radio" default="1" label="Footer tag line" description="Show the footer tag line.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="footer_tag_line_text" type="text" size="10" default="" label="Footer tag line text" description="set the footer tag line to appear above the copyright. Footer tag line must be set to 'Yes'" class="long" />
+		<field name="warp_branding" type="radio" default="1" label="Warp Branding" description="Show the Warp branding.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	</fields>
+	<fields name="Social">
+		<field name="Articles Social Links" type="separator" />
+		<field name="twitter" type="radio" default="0" label="Twitter Button" description="Display a Tweet button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="plusone" type="radio" default="0" label="Google+ Button" description="Display a Google+ button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="facebook" type="radio" default="0" label="Facebook Button" description="Display a facebook like button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="Top Social Links" type="separator" />
+		<field name="behance_link" type="text" size="20" default="" label="Behance username" description="Set your behance username" class="long" />
+		<field name="devianart_link" type="text" size="20" default="" label="Devianart account" description="Set your devianart username" class="long" />
+		<field name="digg_link" type="text" size="20" default="" label="Digg username" description="Set your digg username" class="long" />
+		<field name="dribbble_link" type="text" size="20" default="" label="Dribbble username" description="Set your dribbble username" class="long" />
+		<field name="facebook_link" type="text" size="20" default="" label="Facebook Profile ID" description="Set your facebook profile ID" class="long" />
+		<field name="pinterest_link" type="text" size="20" default="" label="Pinterest username" description="Set your Pinterest username" class="long" />
+		<field name="flickr_link" type="text" size="20" default="" label="Flickr username" description="Set your flickr username" class="long" />
+		<field name="forrst_link" type="text" size="20" default="" label="Forrst username" description="Set your forrst account username" class="long" />
+		<field name="github_link" type="text" size="20" default="" label="Github username" description="Set your github username" class="long" />
+		<field name="linkedin_link" type="text" size="20" default="" label="Linkedin public ID" description="Set your linkedin public profile ID" class="long" />
+		<field name="google_link" type="text" size="20" default="" label="Google+ account ID" description="Set your google plus account ID" class="long" />
+		<field name="tumblr_link" type="text" size="20" default="" label="tumblr username" description="Set your tumblr username" class="long" />
+		<field name="twitter_link" type="text" size="20" default="" label="Twitter username" description="Set your twitter username" class="long" />
+		<field name="vimeo_link" type="text" size="20" default="" label="Vimeo username" description="Set your vimeo username" class="long" />
+		<field name="youtube_link" type="text" size="20" default="" label="Youtube username" description="Set your youtube username" class="long" />
+	</fields>
+
+	<fields name="Mobile">
+		<field name="mobile" type="radio" default="1" label="Mobile Theme" description="Enable the mobile theme.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="show_switch_to_desktop" type="radio" default="1" label="Switch to Desktop" description="Show the 'Switch to Desktop' button in the mobile theme">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="mobile_login" type="radio" default="1" label="Login" description="Show the login in the mobile theme.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="mobile_search" type="radio" default="1" label="Search" description="Show the search in the mobile theme.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="Position Aliases" type="separator" />
+		<field name="mobile_position_logo" type="position" label="Mobile Logo" description="Select which modules should be loaded in this mobile position." />
+		<field name="mobile_position_menu" type="position" label="Mobile Menu" description="Select which modules should be loaded in this mobile position." />
+		<field name="mobile_position_top" type="position" label="Mobile Top" description="Select which modules should be loaded in this mobile position." />
+		<field name="mobile_position_bottom" type="position" label="Mobile Bottom" description="Select which modules should be loaded in this mobile position." />
+		<field name="mobile_position_footer" type="position" label="Mobile Footer" description="Select which modules should be loaded in this mobile position." />
+	</fields>
+</config>

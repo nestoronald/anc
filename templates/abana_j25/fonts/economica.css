@@ -1,0 +1,11 @@
+/*EconomicaRegular*/
+
+@font-face {
+	font-family: 'EconomicaRegular';
+	src: url('economica-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+		 url('economica-regular-webfont.woff') format('woff'),
+		 url('economica-regular-webfont.ttf') format('truetype'),
+		 url('economica-regular-webfont.svg#EconomicaRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

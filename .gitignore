@@ -1,0 +1,10 @@
+/.htaccess
+/.htaccess.admintools
+/htaccess.txt
+/administrator/.htpasswd
+/administrator/.htaccess
+/administrator/cache/*
+/administrator/components/com_cache/*
+/cache/*
+/logs/*
+/tmp/*

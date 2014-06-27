@@ -1,0 +1,80 @@
+/* Author Name: arrowthemes http://themeforest.net/user/arrowthemes  Version: 1.0 */
+
+@import url(../warp/css/ie.css);
+
+	/*cursors
+	----------------------------------------------------------------------------------------------------*/
+	body, .current, abbr{cursor: url(../images/cursor/cursor.cur),default;}
+	a, button, input[type="submit"], input[type="reset"], input[type="button"], a span, .button, .button-color, .error, .accordion h2, li .title, .tag-body, div.detail, ul.menu li, ul.menu, .jqTransformSelectWrapper div span, form label, .zoom, .more, .showhide h4, #slide-nav li, .slider-nav .left, .slider-nav .right, .orbit-bullets li, form label, .orbit-wrapper .timer, .mejs-controls .mejs-time-rail span, .mejs-controls .mejs-time-rail span, .mejs-overlay-play, .wk-slideshow-default .nav span, .wk-slideshow-default > div:hover .next, .wk-slideshow-default > div:hover .prev, .wk-slideshow .next, .wk-slideshow .prev, .wk-slideshow .nav li, ul.gkTabs li, #lightbox-overlay{cursor: url(../images/cursor/hand.cur),pointer !important;}
+	input {cursor: url(../images/cursor/text.cur),text;}
+	abbr, acronym, .postcontent dfn, abbr[title], .postcontent dfn[title]{cursor: url(../images/cursor/help.cur),help;}
+
+	/*toggles
+	----------------------------------------------------------------------------------------------------*/
+	.showhide li section, section.note{border: 1px solid #D8D8D8;}
+
+	/*tags
+	----------------------------------------------------------------------------------------------------*/
+	.ie a.tag-body{ border: 0 none !important; height: 20px !important}
+	.ie .tag-body.yellow{border: 0 none !important; }
+	.ie .tag-body.yellow{background: url(../images/widget/tag_b.png) repeat-x scroll 100% 0 transparent !important; margin-left: 18px}
+	.ie .tag:before{background: url(../images/widget/tag_h.png) no-repeat scroll 0 0 transparent !important; border: 0 none; height: 30px !important; width: 19px !important;  left: -17px !important; top: 0 !important; z-index: 100}
+	.ie .tag:after{background: none; border: 0 none}
+
+	.ie9 .tag-body{box-shadow: none !important;}
+	.ie9 .tag:before{-ms-transform: none !important; box-shadow: none !important; left: -14px !important;}
+	.ie9 .tag:after{-ms-transform: none !important; box-shadow: none !important; }
+
+
+	/*forms*/
+	.ie7 .w50{width: 49%;}
+	.ie7 input.expand, .ie7 textarea.expand{width: 95%;}
+	.ie8 input[type="text"], .ie7 input[type="text"], 
+	.ie8 input[type="password"], .ie7 input[type="password"], 
+	.ie8 input[type="email"], .ie7 input[type="email"], 
+	.ie8 input[type="url"], .ie7 input[type="url"], 
+	.ie8 textarea, .ie7 textarea{
+		border: 1px solid #CECECE;
+		background: url(../images/body/form_input.jpg) repeat-x 0 0 #FFFFFF;
+		}
+
+	.ie7 .error {z-index: 1001; zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('em'),firstChild).className='err');}
+	.ie7 button{padding: 4px 8px; line-height: 18px;}
+	.ie7 .button.icon span{padding-left: 10px;}
+
+	.acyfield_email input[type="text"] {
+		color:#c0c0c0; 
+		background: url(../images/widget/social.png) 4px 7px no-repeat #202020;
+		border: 1px solid #000;  
+	}
+	/*modules
+	----------------------------------------------------------------------------------------------------*/
+	
+	/*footer*/
+	.ie8 .footer-overlay-bottom,
+	.ie7 .footer-overlay-bottom{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#59000000',GradientType=1 );
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#59000000',GradientType=1 );
+	}
+	.ie .footer-overlay-bottom p{color: #404040;}
+
+	/*elements*/
+	.ie8 input,  .ie8 button,
+	.ie7 input,  .ie7 button
+	 { border:1px solid;}
+	.module.badge-hot, .module.badge-top, .module.badge-free, .module.badge-new { border: 1px solid #ccc; }
+	.ie .showhide li section, .ie section.note{border:1px solid #D8D8D8}
+	.ie8 video{background: none;}
+	.ie8 .tooltip,
+	.ie7 .tooltip{
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+		-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+	}
+	.ie9 .tooltip{background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);}
+
+	.lt-ie9 .pic3d{background-color: #FFF; border: 1px solid #CFCFCF;}
+
+	/*body*/
+	.ie7 .top-links a,
+	.ie8 .top-links a{
+		filter: none !important;}
